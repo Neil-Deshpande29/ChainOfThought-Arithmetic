@@ -33,12 +33,13 @@ Starting hyperparameters (paper, Appendix A.3): GPT-2 with embedding size 64, 2 
 The generator takes an `op` argument (only "+" for now). Subtraction and multiplication come later, to compare d across operations.
 
 ## Layout
-- `data.py`: problem sampling and per-format formatting
-- `tokenizer.py`: per-format vocabularies
-- `model.py`: GPT
-- `train.py`: training loop and eval (exact-match accuracy)
+- `cot_arithmetic/data.py`: problem sampling and per-format formatting
+- `cot_arithmetic/tokenizer.py`: per-format vocabularies
+- `cot_arithmetic/model.py`: GPT
+- `cot_arithmetic/train.py`: training loop and eval (exact-match accuracy)
+- `tests/`: tests (run from the repo root with `python3 -m tests.test_tokenizer`)
 - `results/`: CSVs and plots
-- `HANDOFF.md`: updated at the end of every session
+- `docs/HANDOFF.md`: updated at the end of every session
 
 ## Run
 (fill in once train.py exists)
